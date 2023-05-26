@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ImgScroll</title>
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <link rel="stylesheet" href="/static/stylesheets/index.css">
+        <script src="/static/scripts/script.js"></script>
+    </head>
+    <body>
+        {% for img in img_list %}
+            <img class="image" onclick="clickFunction(this)" src="/static/images/{{ img }}">
+        {% endfor %}
+        <div id="void"></div>
+    </body>
+</html>
