@@ -16,6 +16,7 @@ if __name__ == '__main__':
     # load images
     load_dotenv()
     IMG_PATH = os.getenv('IMG_PATH')
+    print(IMG_PATH)
     os.mkdir('./static/images')
     for img in os.listdir(IMG_PATH):
         shutil.copy2(IMG_PATH + '/' + img, './static/images')
